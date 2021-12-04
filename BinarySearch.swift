@@ -47,7 +47,7 @@ func binarySearch(numberArray: [Int], userNumber: Int,
 func generateRandomArray() -> [Int] {
     let arraySize = 250
 
-  var numberArray = (0..<arraySize).map { _ in Int.random(in: min...max) }
+    var numberArray = (0..<arraySize).map { _ in Int.random(in: min...max) }
     numberArray.sort()
 
     return numberArray
@@ -60,7 +60,7 @@ func errorMessage() {
 
 let numberArray = generateRandomArray()
 
-print("\n Sorted list of numbers:\n")
+print("\nSorted list of numbers:\n")
 for element in numberArray {
     let padded = String(format: "%03d", element)
     print("\(padded), ", terminator: "")
